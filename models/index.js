@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/animal_db', { 
+mongoose.connect('mongodb://localhost/animal_db', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -12,3 +12,5 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
   console.log('Connection OK!');
 });
+
+module.exports.Animal = require('./animal.model');

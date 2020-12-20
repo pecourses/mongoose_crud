@@ -1,0 +1,11 @@
+POST http://localhost:3000/api/animals
+Content-Type: application/vnd.api+json
+
+{
+   "genus": "Megaptera Gray, 1846",
+   "species": "M.novaeangliae",
+   "name": "Tuzik",
+   "email": "tyzik3@gmail.com",
+   "limbs_count": 0,
+   "birthday": "2020-01-01"
+}

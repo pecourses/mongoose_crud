@@ -1,0 +1,8 @@
+PATCH http://localhost:3000/api/animals/5fdf851bdd74641f1054f074
+Content-Type: application/vnd.api+json
+
+{
+   
+   "name": "Tuzik1"
+   
+}
