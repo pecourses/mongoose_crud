@@ -1,14 +1,14 @@
 const {Router} = require('express');
-const {animalControoller} = require('./../controllers');
+const {animalController} = require('./../controllers');
 
 const animalRouter = new Router();
 
-animalRouter.post('/', animalControoller.createAnimal);
-animalRouter.get('/', animalControoller.getAllAnimals);
+animalRouter.post('/', animalController.createAnimal);
+animalRouter.get('/', animalController.getAllAnimals);
 
 animalRouter.route('/:animalId')
-  .get(animalControoller.getAnimal)
-  .patch(animalControoller.updateAnimal)
-  .delete(animalControoller.deleteAnimal)
+  .get(animalController.getAnimal)
+  .patch(animalController.updateAnimal)
+  .delete(animalController.deleteAnimal)
 
 module.exports = animalRouter;

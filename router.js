@@ -1,5 +1,5 @@
 const {Router} = require('express');
-const animalRouter = require('./routers');
+const animalRouter = require('./routers/animalRouter');
 
 const router = new Router();
 

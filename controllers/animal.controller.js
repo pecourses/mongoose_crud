@@ -1,3 +1,5 @@
+const {Animal} = require('./../models');
+
 module.exports.createAnimal = async (req, res, next) => { }
 
 module.exports.getAllAnimals = async (req, res, next) => { }
